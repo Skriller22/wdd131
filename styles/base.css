@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #166319;
+    color: white;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header h1, header h2{
+    margin: 0;
+    padding: 0 .3rem;
+    font-weight: 400;
+}
+
+header h2 {
+    color: #ff9100;
+}
+
+header nav {
+    margin-top: 1rem;
+    background-color: #333;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:hover {
+    background-color: #f4f4f4;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    font-size: larger;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.card div {
+    margin: 1rem;
+}
+
+.card h2 {
+    margin-top: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #166319;
+    color: #fff;
+    font-weight: 100;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.about_me {
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 20px;
+    margin: 20px;
+}
+
+.pfp_img {
+    width: 200px;
+    height: auto;
+}
+
+.about_idaho h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.about_idaho hr {
+    margin: 0;
+}
+
+.about_idaho div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_idaho div p {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.potatoes {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 0.3rem;
+}
+
+.modified {
+    color: #166319;
+    font-weight: 600;
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+}
