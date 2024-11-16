@@ -1,8 +1,8 @@
-const hamButton = document.querySelector('#hamburger');
-const navLinks = document.querySelectorAll('.nav-links');
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
-    hamButton.classList.toggle('open');
+    hamburger.classList.toggle('open');
 });
 

@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
 }
 
 header {
@@ -33,15 +33,14 @@ header h1, header h2 {
 }
 
 .nav-links {
-    list-style: none;
     display: none;
     flex-direction: column;
     position: absolute;
+    list-style: none;
     top: 0;
     right: 0;
     background-color: #333;
     width: 100%;
-    border-radius: 5px;
 }
 
 .nav-links li {
@@ -55,29 +54,49 @@ header h1, header h2 {
     padding: 10px 20px;
 }
 
-.nav-links a:hover {
-    background-color: #333;
+.nav-links li:hover {
+    background-color: #555;
 }
 
 .hamburger {
     display: block;
     font-size: 36px;
     cursor: pointer;
+    position: relative;
+    z-index: 1000;
 }
 
-.nav-menu.open {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    width: 100%;
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.open {
+    content: "\00d7";
+}
+
+.hamburger.open::before {
+    content: "X";
 }
 
 .nav-links.open {
-    flex-direction: column;
     display: flex;
-    gap: 0;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-links.open li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-links.open a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
 main {
@@ -111,6 +130,7 @@ figure img {
 figcaption {
     margin-top: 10px;
     color: #333;
+    font-size: large;
 }
 
 footer {
