@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. The home page of Matthew Remington as he learns about dynamic web fundamentals and more.">
     <meta name="author" content="Matthew Remington">
     <title>WDD 131 - Dynamic Web Fundamentals - Matthew Remington</title>
@@ -19,10 +19,11 @@
 </head>
 
 <body>
-    <Header>
+    <header>
         <h1>Temple Album</h1>
-        <nav>
-            <ul>
+        <nav class="nav-menu">
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="old.html">Old</a></li>
                 <li><a href="new.html">New</a></li>
@@ -30,7 +31,7 @@
                 <li><a href="small.html">Small</a></li>
             </ul>
         </nav>
-    </Header>
+    </header>
     <main>
         <h1>Home</h1>
         <div class="f_grid">
@@ -74,8 +75,9 @@
     </main>
     <footer>
         <div>
-            <p>&copy;<span id="year"></span><p> Matthew Remington - Idaho</p>
+            <p>&copy;<span id="year"></span> Matthew Remington - Idaho</p>
         </div>
-        <P class="modified">Last Modified: <span id="lastModified"></span></P>
+        <p class="modified">Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
+</html>

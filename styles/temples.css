@@ -1,9 +1,6 @@
-
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -17,43 +14,70 @@ header {
     padding: 0px 10px 0px 10px;
     text-align: start;
     align-items: center;
-
     display: flex;
     justify-content: space-between;
-
 }
 
-header h1, header h2{
+header h1, header h2 {
     margin: 0;
     padding: 0 .3rem;
     font-weight: 400;
 }
 
-nav ul {
+.nav-menu {
     display: flex;
-    justify-content: space-around;
-    margin: 0;
+    justify-content: end;
+    align-items: center;
+    max-width: 700px;
+    padding-right: 1rem;
 }
 
-nav ul li {
-    display: inline;
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    border-radius: 5px;
 }
 
-nav ul li:hover {
-    background-color: #f4f4f4;
+.nav-links li {
+    display: block;
+    text-align: right;
 }
 
-nav ul li a {
-    color: #f4f4f4;
-    font-size: larger;
+.nav-links a {
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
-    display: inline-block;
 }
 
-nav ul li a:hover {
-    background-color: #f4f4f4;
-    color: #333;
+.nav-links a:hover {
+    background-color: #333;
+}
+
+.hamburger {
+    display: block;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.nav-menu.open {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav-links.open {
+    flex-direction: column;
+    display: flex;
+    gap: 0;
 }
 
 main {
@@ -65,13 +89,15 @@ main h1 {
     margin: 10px;
 }
 
-
 .f_grid {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 figure {
-    margin: 20px;
+    margin: 0px;
     text-align: center;
 }
 
@@ -87,13 +113,6 @@ figcaption {
     color: #333;
 }
 
-
-
-
-
-
-
-
 footer {
     background-color: #333;
     color: white;
@@ -102,7 +121,6 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
