@@ -1,0 +1,27 @@
+@media screen and (min-width: 777px) {
+    .img_container {
+        position: relative;
+    }
+    
+    .data_seattle {
+        background-color: rgba(244, 244, 244, 0.8);
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 5px;
+
+        position: absolute;
+        top: 3rem;
+        left: 1rem;
+    }
+    .weather_seattle {
+        background-color: rgba(244, 244, 244, 0.8);
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 5px;
+
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+}
