@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An informational page about Seattle Washington">
+    <title>Place</title>
+
+    <link rel="stylesheet" href="styles/place-mobile.css">
+    <link rel="stylesheet" href="styles/place-desktop.css">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Seattle Washington</h1>
+    </header>
+    <main>
+        <div class="img_container">
+            <picture>
+                <source srcset="images/seattle-wide.webp" media="(min-width: 777px)">
+                <img src="images/seattle-tall.webp" alt="Seattle Washington space needle skyline" class="seattle_img" width="320">
+            </picture>
+            <div class="data_seattle">
+                <h2>Data</h2>
+                <div class="data_set">
+                    <h4>Area:</h4>
+                    <p>142.5 mi²</p>
+                </div>
+                <div class="data_set">
+                    <h4>Population:</h4>
+                    <p>753,675</p>
+                </div>
+                <div class="data_set">
+                    <h4>Calling Code</h4>
+                    <p>+1 206</p>
+                </div>
+                <div class="data_set">
+                    <h4>Founded:</h4>
+                    <p>November 13, 1851</p>
+                </div>
+                <div class="data_set">
+                    <h4>Time Zone:</h4>
+                    <p>Pacific Time Zone</p>
+                </div>
+                <div class="data_set">
+                    <h4>Website:</h4>
+                    <p><a target="_blank" href="https://www.seattle.gov/">Seattle.gov</a></p>
+                </div>
+            </div>
+            <div class="weather_seattle">
+                <h2>Weather</h2>
+                <div class="weather_set">
+                    <h4>Temperature:</h4>
+                    <p>72°F</p>
+                </div>
+                <div class="weather_set">
+                    <h4>Conditions:</h4>
+                    <p>Partly Cloudy</p>
+                </div>
+                <div class="weather_set">
+                    <h4>Humidity:</h4>
+                    <p>50%</p>
+                </div>
+                <div class="weather_set">
+                    <h4>Wind:</h4>
+                    <p>5 mph</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy;<span id="year"></span><p> Matthew Remington - Idaho</p>
+        </div>
+        <P class="modified">Last Modified: <span id="lastModified"></span></P>
+    </footer>
+</body>
+</html>

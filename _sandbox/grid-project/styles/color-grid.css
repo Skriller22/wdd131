@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 50px); /* 8 columns */
+    grid-template-rows: repeat(7, 50px); /* 7 rows */
+    gap: 5px;
+}
+
+.grid-item {
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.grid-item.selected {
+    background-color: yellow; /* Change to desired color */
+}
+
+.grid-item.selected-player1 {
+    border: 2px solid #FF5733; /* Player 1 border color */
+}
+
+.grid-item.selected-player2 {
+    border: 2px solid #33FF57; /* Player 2 border color */
+}
+
+.grid-item.active-player1 {
+    border: 2px solid black; /* Active border for Player 1 */
+}
+
+.grid-item.active-player2 {
+    border: 2px solid black; /* Active border for Player 2 */
+}
+
+.player1 {
+    background-color: #FF5733; /* Player 1 color */
+}
+
+.player2 {
+    background-color: #33FF57; /* Player 2 color */
+}
+
+.turn-indicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#change-turn-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#color-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.color-option.selected {
+    border: 2px solid black;
+}
