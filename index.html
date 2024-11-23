@@ -6,7 +6,10 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. The home page of Matthew Remington as he learns about dynamic web fundamentals and more.">
     <meta name="author" content="Matthew Remington">
     <title>WDD 131 - Dynamic Web Fundamentals - Matthew Remington</title>
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-mobile.css">
+    <link rel="stylesheet" href="styles/base-desktop.css" media="screen and (min-width: 600px)">
+
+
     <script src="scripts/getdates.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +31,7 @@
         </nav>
     </header>
     <main class="index">
-        <section class="card">
+        <section class="card" id="hero">
             <h2>About Me</h2>
             <div class="about_me">
                 <div>
@@ -51,7 +54,7 @@
                 </div>
             </div>
         </section>
-        <section class="card">
+        <section class="card" id="resources">
             <h2>Web Dev Resources</h2>
             <ul>
                 <li><a target="_blank" href="fonts.google.com">Google Fonts</a></li>
@@ -60,6 +63,17 @@
                 <li><a target="_blank" href="https://www.iconfinder.com/">Icon Finder</a></li>
                 <li><a target="_blank" href="https://poe.com/">Poe AI</a></li>
             </ul>
+        </section>
+        <section class="card" id="directory">
+            <h2>Assignment Directory</h2>
+            <ul>
+                <li><a target="_blank" href="/week02/bom.html">BOM</a></li>
+                <li><a target="_blank" href="/place.html">Place</a></li>
+                <li><a target="_blank" href="/week03/design.html">Design</a></li>
+                <li><a target="_blank" href="/temples.html">Temples</a></li>
+                <li><a target="_blank" href="/_sandbox/grid-project/color-grid.html">Color Grid</a></li>
+            </ul>
+
         </section>
     </main>
     <footer>
