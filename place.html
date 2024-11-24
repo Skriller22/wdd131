@@ -23,7 +23,11 @@
                 <img src="images/seattle-tall.webp" alt="Seattle Washington space needle skyline" class="seattle_img" width="320">
             </picture>
             <div class="data_seattle">
-                <h2>Data</h2>
+                <div class="data_title">
+                    <p></p>
+                    <h2>Data</h2>
+                </div>
+                <p></p>
                 <div class="data_set">
                     <h4>Area:</h4>
                     <p>142.5 mi²</p>
@@ -50,10 +54,14 @@
                 </div>
             </div>
             <div class="weather_seattle">
-                <h2>Weather</h2>
+                <div class="weather_title">
+                    <h2>Weather</h2>
+                    <img id="weather-icon" src="icons/weatherCons/day-part-cloudy.svg">
+                </div>
+                <p></p>
                 <div class="weather_set">
                     <h4>Temperature:</h4>
-                    <p>72°F</p>
+                    <p>32°F</p>
                 </div>
                 <div class="weather_set">
                     <h4>Conditions:</h4>
@@ -67,6 +75,9 @@
                     <h4>Wind:</h4>
                     <p>5 mph</p>
                 </div>
+                <div class="weather_set">
+                    <h4>Wind Chill:</h4>
+                    <p id="windChill"></p>
             </div>
         </div>
     </main>

@@ -1,10 +1,16 @@
-@media screen and (min-width: 777px) {
+@media screen and (min-width: 777px) {   
     .img_container {
         position: relative;
+        top: 0;
+    }
+
+    .img_container picture {
+        position: relative;
+        top: 0;
     }
     
     .data_seattle {
-        background-color: rgba(244, 244, 244, 0.8);
+        background-color: rgba(214, 238, 255, 0.8);
         padding: 1rem;
         margin: 1rem;
         border-radius: 5px;
@@ -13,15 +19,57 @@
         top: 3rem;
         left: 1rem;
     }
+
+    .data_title {
+        text-align: center;
+        display: flex;
+        background-color: #00563F;
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: -30px;
+        border-radius: 5px;
+        padding: .3rem;
+        z-index: 1; /* Added z-index */
+    }
+
     .weather_seattle {
-        background-color: rgba(244, 244, 244, 0.8);
+        background-color: rgba(214, 238, 255, 0.8);
         padding: 1rem;
         margin: 1rem;
         border-radius: 5px;
-
         position: absolute;
         bottom: 1rem;
-        right: 1rem;
+        right: 2rem;
     }
-    
+
+    .weather_title {
+        text-align: center;
+        display: flex;
+        background-color: #00563F;
+        color: rgb(255, 255, 255);
+        position: relative;
+        left: -30px;
+        border-radius: 5px;
+        padding: .3rem;
+        z-index: 1; /* Added z-index */
+    }
+
+    #weather-icon {
+        width: 70px;
+        height: auto;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+
+        background-color: white;
+        border-radius: 50%;
+
+    }
+
+    .weather_title h2 {
+        margin: 0;
+        padding: 0.3rem;
+        align-self: center;
+
+    }
 }

@@ -1,16 +1,28 @@
 body {
     margin: 0;
+
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #001780;
+    background-color: #00563F;
     color: white;
     text-align: center;
-    padding: 0;
+    padding: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.img_container {
+    background-color: gold;
+    display: grid;
+}
+.img_container picture {
+
+    position: relative;
+    top: 10px;
 }
 
 .seattle_img {
@@ -24,9 +36,16 @@ header {
     height: auto;
 }
 
+.data_title {
+    padding: 1rem 0 0 0;
+}
 .data_set {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.data_seattle, .weather_seattle {
+    background-color: white;
 }
 
 .data_seattle h2 {
@@ -50,6 +69,10 @@ header {
     
 }
 
+.weather_title h2 {
+    margin: 2rem 0 0 0;
+}
+
 .weather_set {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,9 +90,16 @@ header {
     text-align: left;
 }
 
+#weather-icon {
+    width: 50px;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
 
 footer {
-    background-color: #001780;
+    background-color: #00563F;
     color: white;
     text-align: center;
     padding: 0;
