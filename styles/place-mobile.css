@@ -1,6 +1,5 @@
 body {
     margin: 0;
-
     font-family: Arial, sans-serif;
 }
 
@@ -20,7 +19,6 @@ header {
     display: grid;
 }
 .img_container picture {
-
     position: relative;
     top: 10px;
 }
@@ -31,7 +29,6 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0;
-
     width: 100%;
     height: auto;
 }
@@ -66,7 +63,6 @@ header {
 
 .weather_seattle h2 {
     text-align: center;
-    
 }
 
 .weather_title h2 {
