@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #00563F;
+    --secondary-color: #FFD700;
+}
+
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -5,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #00563F;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 1rem;
@@ -16,7 +21,7 @@ header {
 }
 
 .img_container {
-    background-color: gold;
+    background-color: var(--secondary-color);
     display: grid;
 }
 .img_container picture {
@@ -96,7 +101,7 @@ header {
 }
 
 footer {
-    background-color: #00563F;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
     padding: 0;
