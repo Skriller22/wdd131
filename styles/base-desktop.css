@@ -143,7 +143,14 @@
     }
     
     #hero {
+        grid-column: 1;
+        grid-row: 1;
         grid-row: span 2;
+    }
+
+    #resources {
+        grid-row: 1;
+        grid-column: 2;
     }
     
     #directory {
