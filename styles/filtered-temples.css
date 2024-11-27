@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #166319;
+    --secondary-color: #e2e2e2;
+    --tertiary-color: #333;
+    --quaternary-color: #f4f4f4;
+    --border-color: #999;
+    --light-border-color: #ccc;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+    padding-bottom: 6rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0px 10px 0px 10px;
+    text-align: start;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1, header h2 {
+    margin: 0;
+    padding: 0 .3rem;
+    font-weight: 400;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    max-width: 700px;
+    padding-right: 1rem;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    top: 0;
+    right: 0;
+    background-color: var(--tertiary-color);
+    width: 100%;
+}
+
+.nav-links li {
+    display: block;
+    text-align: right;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav-links li:hover {
+    background-color: var(--tertiary-color);
+}
+
+.hamburger {
+    display: block;
+    font-size: 36px;
+    padding: 10px 0px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.open::before {
+    content: "\00d7";
+}
+
+.nav-links.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-links.open li {
+    display: block;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.nav-links.open a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav-links.open li:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-links.open li:hover a {
+    color: var(--quaternary-color);
+}
+
+main {
+    max-width: 100%;
+}
+
+main h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+#temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    text-align: center;
+    padding: 0.8rem;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+}
+
+.card h2 {
+    font-weight: 700;
+}
+
+.card p {
+    margin: 3px;
+    font-weight: 400;
+}
+
+.card img {
+    margin: 1rem;
+    box-shadow: #333 2px 2px 15px;
+    border: var(--light-border-color) 1px solid;
+}
+
+figure {
+    margin: 0px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: var(--tertiary-color);
+    font-size: large;
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 0.3rem;
+}
