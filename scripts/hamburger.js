@@ -5,9 +5,4 @@ const navLinks = document.getElementById('nav-links');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     hamburger.classList.toggle('open');
-    if (hamburger.classList.contains('open')) {
-        hamburger.innerHTML = '';
-    } else {
-        hamburger.innerHTML = '';
-    }
 });
