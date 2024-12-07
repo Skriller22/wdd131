@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #213a07;
+    --secondary-color: #e08956;
+    --tertiary-color: #ebf7df;
+    --quaternary-color: #425530;
+
+    --dark-border-color: #1a1a1a;
+    --light-border-color: #ececec;
+
+    --standard-width: 93%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+/* ---------------- Header Elements ---------------- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ---------------- Main Elements ---------------- */
+/* ------------- Form Elements ------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0 0.5rem 1rem 0.5rem;
+
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+fieldset {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: var(--standard-width)
+}
+
+legend {
+    text-align: start;
+    margin: 2px 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+label {
+    height: 2rem;
+}
+
+input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+}
+
+form span {
+    color: var(--secondary-color);
+    font-size: small;
+}
+
+/* --- Product Name --- */
+#f-product {
+    margin: 1rem 0 0 0;
+}
+
+#f-product select {
+    width: 100%;
+    height: 3rem;
+    font-size: large;
+    border: 1px solid var(--light-border-color);
+    border-radius: 5px;
+    margin: 5px 0 0 0;
+}
+
+/* --- Radio Star Ratings --- */
+#f-rating {
+    margin: 1rem 0;
+}
+
+#f-rating div {
+    direction: rtl;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 15px;
+
+    background-color: var(--quaternary-color);
+    border-radius: 50px;
+}
+
+#f-rating legend {
+    text-align: left;
+}
+
+#f-rating input{
+    display: none;
+}
+
+#f-rating div {
+    height: 2.9rem;
+}
+
+#f-rating label {
+    color: #ccc;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+}
+
+#f-rating input:checked ~ label {
+    color: gold;
+}
+
+#f-rating label:hover,
+#f-rating label:hover ~ label {
+    color: gold;
+}
+
+/* --- Date of Installation --- */
+#f-date {
+    margin: 1rem 0;
+}
+
+#f-date legend {
+    text-align: left;
+    margin: 2px 0;
+}
+
+#f-date input {
+    width: 100%;
+    height: 3rem;
+    font-size: large;
+}
+
+/* --- Features Suggestions --- */
+#f-features {
+    margin: 1rem 0;
+}
+
+#f-features legend{
+    display: flex;
+    flex-direction: column;
+}
+
+#f-features div {
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+#f-features label {
+    width: 100%;
+    height: 2rem;
+    font-size: medium;
+}
+
+/* --- Written Review --- */
+#f-review {
+    max-width: var(--standard-width);
+}
+
+#f-review textarea {
+    width: 100%;
+    height: 10rem;
+    font-size: large;
+    border: 1px solid var(--light-border-color);
+    border-radius: 2px;
+    margin: 5px 0;
+    padding: 4px;
+}
+
+/* --- Name --- */
+#f-name {
+    margin: 1rem 0;
+}
+
+#f-name input {
+    width: 100%;
+    height: 3rem;
+    font-size: large;
+    border: 1px solid var(--light-border-color);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 4px;
+}
+
+/* --- Submit Button */
+form section {
+    width: var(--standard-width);
+    margin: 0;
+    padding: 0;
+}
+
+form section input {
+    width: 100%;
+    height: 3rem;
+    font-size: large;
+    background-image: linear-gradient(var(--primary-color), var(--quaternary-color));
+    background-image: linear-gradient(var(--quaternary-color), var(--primary-color));
+    color: white;
+    border: 1px solid var(--light-border-color);
+    border-radius: 5px;
+}
+
+form section input:hover {
+    background-image: linear-gradient(var(--primary-color), var(--quaternary-color));
+}
+
+/* ---------------- Footer Elements ---------------- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 0.3rem;
+}
+
+.modified {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: smaller;
+    margin: 0;
+    padding: 5px 0;
+}

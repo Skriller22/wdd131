@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of the page">
+    <meta name="author" content="Matthew Remington">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <title>Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset id="f-product">
+                <legend>Product Name</legend>
+                <select name="product">
+                    <option value="none" selected disabled hidden>Choose a Product ...</option>
+                </select>
+            </fieldset>
+            <fieldset id="f-rating">
+                <legend>Overall Rating</legend>
+                <div>
+                    <input type="radio" id="star5" name="rating" value="5" required>   <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" required>            <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" required>            <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" required>            <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" required>            <label for="star1">★</label>
+                </div>
+            </fieldset>
+            <fieldset id="f-date">
+                <legend>Date of Installation</legend>
+                <input type="date" name="o-date" required>
+            </fieldset>
+            <fieldset id="f-features">
+                <legend>Which Features would you find useful in the product? <span>(check all that apply)</span></legend>
+                <div>
+                    <input type="checkbox" id="durability" name="durability" value="durability">        <label for="durability">Durability</label>
+                    <input type="checkbox" id="easeOfUse" name="easeOfUse" value="easeOfUse">           <label for="easeOfUse">Ease of Use</label>
+                    <input type="checkbox" id="performance" name="performance" value="performance">     <label for="performance">Performance</label>
+                    <input type="checkbox" id="design" name="design" value="design">                    <label for="design">Design</label>
+                    <input type="checkbox" id="efficiency" name="efficiency" value="efficiency">        <label for="efficiency">Efficiency</label>
+                    <input type="checkbox" id="availability" name="availability" value="availability">  <label for="availability">Availability</label>
+                </div>
+            </fieldset>
+            <fieldset id="f-review">
+                <legend>Written Review <span>(optional)</span></legend>
+                <textarea name="w-review" rows="5" cols="50" placeholder="Write your review here"></textarea>
+            </fieldset>
+            <fieldset id="f-name">
+                <legend>Your Name <span>(optional)</span></legend>
+                <input type="text" name="name">
+            </fieldset>
+            <section>
+                <input id="submit" type="submit" value="Post Your Review">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="year"></span><p> &#9881; Matthew Remington &#9881; Idaho</p>
+        </div>
+        <p class="modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
