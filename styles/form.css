@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ---------------- Header Elements ---------------- */
@@ -168,6 +169,8 @@ form span {
     width: 100%;
     height: 2rem;
     font-size: medium;
+    display: flex;
+    align-items: center;
 }
 
 /* --- Written Review --- */
