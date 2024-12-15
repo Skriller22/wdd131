@@ -193,7 +193,7 @@ body::after {
 
 #mail-form fieldset{
     border: none;
-    display: flexbox;
+    display: block;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
@@ -222,7 +222,7 @@ body::after {
     border: none;
     border-radius: 5px;
     padding: 10px;
-    width: 50%;
+    width: 90%;
     margin: 10px;
 }
 
