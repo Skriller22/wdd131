@@ -1,0 +1,29 @@
+/* ...existing code... */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.contact, .profile {
+    width: 100%;
+    text-align: center;
+}
+
+.intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.intro nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.intro nav ul li {
+    margin: 0 10px;
+}
